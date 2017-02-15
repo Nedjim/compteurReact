@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class Print extends React.Component {
     render() {
-        console.log(this.props);
         return (
             <div id='compteur'>
                 <div className='bloc mounth'>

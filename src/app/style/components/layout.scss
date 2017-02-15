@@ -1,0 +1,17 @@
+body {
+    header {
+        height: 10vh;
+        padding-top: 1rem;
+        h3 {
+            text-align: center;
+        }
+    }
+    #compteur {
+        width: 50%;
+        margin: 0 auto;
+        .bloc {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+    }
+}

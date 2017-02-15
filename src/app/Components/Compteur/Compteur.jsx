@@ -5,14 +5,14 @@ export default class Compteur extends React.Component {
 
     constructor(){
         super();
-        this.state = {
-        }
+        this.state = {}
         setInterval(this.actualDate.bind(this), 1000);
     }
 
     mounth(){
         let mounth = Math.round(this.state.time / 2629800000);
         this.setState({mounth: mounth});
+
     }
 
     days(){
@@ -35,11 +35,11 @@ export default class Compteur extends React.Component {
          this.setState({seconds: sec});
      }
 
-
     actualDate () {
-        let fin = new Date(2017, 6, 14); //décallage GMT - 1 pour le mois
+        let fin = new Date(2017, 6, 14);
         let today = new Date();
         let compteur = fin.getTime() - today.getTime();
+
         this.setState({time: compteur});
         this.mounth();
         this.days();

@@ -6,12 +6,28 @@ body {
             text-align: center;
         }
     }
-    #compteur {
-        width: 50%;
-        margin: 0 auto;
-        .bloc {
-            display: inline-block;
-            margin-right: 2rem;
+    #content {
+        #compteur {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 10vh;
+            padding-bottom: 1rem;
+            .bloc {
+                display: inline-block;
+                margin-right: 2rem;
+            }
+            .bloc:first-child {
+                margin-left: 2rem;
+            }
+            div {
+                text-align: center;
+                margin-top: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        p {
+            margin-top: 2rem;
+            text-align: center;
         }
     }
 }

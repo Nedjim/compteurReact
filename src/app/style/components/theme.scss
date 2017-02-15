@@ -1,18 +1,33 @@
 body {
-    background: #E0E0E0;
+    background: white;
     header {
         background: #006064;
         h3 {
-            font-size: 2.5rem;
-            color: #E0E0E0;
+            font-size: 2.8rem;
+            color: #FAFAFA;
             font-family: $barrio;
         }
     }
-    #compteur {
-        .bloc {
-            h3 {
-                font-size: 1.5rem;
+    #content {
+        #compteur {
+            border: 0.1rem solid #757575;
+            @include radius(0.5rem);
+            .bloc {
+                font-family: $arimo;
+                h3 {
+                    font-size: 1.3rem;
+                    color: #4E342E;
+                    font-weight: bold;
+                }
+                div {
+                    font-size: 1.2rem;
+                    color: #424242;
+                }
             }
+        }
+        p {
+            font-family: $arimo;
+            font-size: 1.2rem;
         }
     }
 }

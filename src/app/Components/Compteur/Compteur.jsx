@@ -37,7 +37,7 @@ export default class Compteur extends React.Component {
 
 
     actualDate () {
-        let fin = new Date(2017, 2, 16); //décallage GMT - 1 pour le mois
+        let fin = new Date(2017, 6, 14); //décallage GMT - 1 pour le mois
         let today = new Date();
         let compteur = fin.getTime() - today.getTime();
         this.setState({time: compteur});
@@ -51,12 +51,13 @@ export default class Compteur extends React.Component {
 
     render() {
         return (
-            <div id='compteur'>
+            <div id="content">
                 <Print mounth={this.state.mounth}
                        days={this.state.days}
                        hours={this.state.hours}
                        minutes={this.state.minutes}
                        secondes={this.state.seconds}/>
+                <p>Elapsed time before July 14th, 2017</p>
             </div>
         )
     }

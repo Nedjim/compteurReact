@@ -4,7 +4,7 @@ export default class Print extends React.Component {
     render() {
         console.log(this.props);
         return (
-            <div >
+            <div id='compteur'>
                 <div className='bloc mounth'>
                     <h3>Mounth</h3>
                     <div>{this.props.mounth}</div>

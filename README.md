@@ -1,10 +1,10 @@
 # Compteur Reactjs
 
-## 1 - Execution
+## 1 - Présentation
 
 Cette application indique le temps qu'il nous rester avant le 14 juillet 2017.
 
-## 2 - Execution
+## 2 - Exécution
 
 ```
 $ npm install
